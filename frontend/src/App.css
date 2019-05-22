@@ -128,7 +128,7 @@ h6 {
   display: block;
   text-decoration: none;
   padding: 1rem 0;
-  color: var(--mainBlack);
+  color: #222;
   transition: var(--mainTransition);
   text-align: center;
   font-size: 1.1rem;
@@ -331,7 +331,7 @@ h6 {
   width: 100%;
   height: 40px;
   padding-top: 10px;
-  background-color: black;
+  background-color: rgb(17, 17, 17);
   color: white;
   text-align: center;
 }

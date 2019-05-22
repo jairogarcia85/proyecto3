@@ -74,7 +74,7 @@ class Navbar extends Component {
                 <Link to="/">Home </Link>
               </li>
               <li>
-                <Link to="/register">Contacto </Link>
+                <Link to="/contact">Contact </Link>
               </li>
               <li>
                 <Link to="/">Logout</Link>
