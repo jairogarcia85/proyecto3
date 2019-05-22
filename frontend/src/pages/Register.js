@@ -6,7 +6,7 @@ import Signup from "../components/signup/Signup";
 const Register = () => {
   return (
     <div>
-      <section className="signupForm">
+      <section className="signupForm signup-box">
         <h2>Get your code</h2>
         <h4>Register</h4>
         <Signup />

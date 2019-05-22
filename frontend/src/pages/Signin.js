@@ -6,7 +6,7 @@ import Login from "../components/login/Login";
 const Signin = () => {
   return (
     <div>
-      <section className="loginForm">
+      <section className="loginForm login-box">
         <h2>Log in</h2>
         <h4>Is everything ok?</h4>
         <Login />

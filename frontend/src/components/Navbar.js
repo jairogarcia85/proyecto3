@@ -12,7 +12,7 @@ class Navbar extends Component {
 
   isLogged = () => {
     console.log(localStorage.getItem("user"));
-    return localStorage.getItem("user", this.state.isLogged);
+    return localStorage.getItem("user");
   };
 
   handleToggle = () => {
@@ -77,7 +77,7 @@ class Navbar extends Component {
                 <Link to="/register">Contacto </Link>
               </li>
               <li>
-                <Link to="/login">Logout</Link>
+                <Link to="/">Logout</Link>
               </li>
             </ul>
           </div>
