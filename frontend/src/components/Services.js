@@ -1,45 +1,35 @@
 import React, { Component } from "react";
 import Title from "./Title";
-import { FaCocktail, FaHiking, FaShuttleVan, FaBeer } from "react-icons/fa";
+import { FaCheckCircle } from "react-icons/fa";
 
 export default class Services extends Component {
   state = {
     services: [
       {
-        icon: <FaCocktail />,
-        title: "Get a Code",
-        info: "It's easy and free"
-      },
-      {
-        icon: <FaHiking />,
-        title: "Paste the label",
-        info: "Paste or set as wallpaper"
-      },
-      {
-        icon: <FaShuttleVan />,
+        icon: <FaCheckCircle />,
         title: "Scan",
-        info: "Scan the code with your phone"
+        info: "Use  the camera of your phone"
       },
       {
-        icon: <FaBeer />,
-        title: "Access code",
-        info: "Fill the field with the Code"
+        icon: <FaCheckCircle />,
+        title: "Get into the site",
+        info: "Fill the form and send"
       },
       {
-        icon: <FaHiking />,
-        title: "Test",
-        info: "Send to yourself an email"
-      },
-      {
-        icon: <FaShuttleVan />,
-        title: "Check your email",
-        info: "Be sure you are getting an email"
+        icon: <FaCheckCircle />,
+        title: "Contact",
+        info: "Keep in touch with the owner"
       }
     ]
   };
   render() {
     return (
       <section className="services">
+        <h3>
+          Create and Paste the code on your valuable things, then if somebody
+          find your things, this is what they have to do.
+        </h3>
+        <br /> <br />
         <Title title="How the code works?" />
         <div className="services-center">
           {this.state.services.map((item, index) => {

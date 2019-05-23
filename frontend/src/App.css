@@ -216,6 +216,22 @@ h6 {
   text-align: center;
 }
 
+.email-sender {
+  margin: 100px auto;
+  border: 1px solid #2e85d2;
+  border-radius: 5px;
+  padding: 15px 20px;
+  -webkit-box-shadow: 10px 10px 38px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 38px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 38px -4px rgba(0, 0, 0, 0.75);
+  width: 660px;
+}
+
+.email-sender h2,
+p {
+  text-align: center;
+}
+
 .box-qr {
   margin: 30px auto;
   border: 1px solid #2e85d2;
@@ -244,6 +260,14 @@ h6 {
 .roomsHero {
   background-image: url("./images/room-2.jpeg");
   min-height: 60vh;
+}
+
+.email-button {
+  background-color: #1790ff;
+  padding: 10px 20px;
+  color: white;
+  border: 1px solid #1790ff;
+  border-radius: 5px;
 }
 /* End of Hero */
 /* Banner */

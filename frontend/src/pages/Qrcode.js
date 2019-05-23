@@ -6,7 +6,7 @@ const Qrcode = props => {
   return <img src={code} alt="qr code" />;
 };
 
-function QRcodeGenerator(url) {
+function QRcodeGenerator(url = "https://www.google.com") {
   return new QRious({
     background: "rgb(255, 255, 255)",
     foreground: "rgb(10, 0, 12)",

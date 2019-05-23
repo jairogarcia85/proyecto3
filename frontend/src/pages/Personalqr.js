@@ -13,10 +13,15 @@ class Profile extends Component {
           </p>
           <h3>Have you found my things?</h3>
           <br />
-          <Qrcode />
+          <Qrcode
+            url={`http://192.168.13.62:3001/${
+              JSON.parse(localStorage.getItem("user"))._id
+            }/contact-owner`}
+          />
           <br />
           <br />
           <h3>Please, Scan and contact me!</h3>
+          <p>http://helpmegetback.com</p>
         </div>
       </div>
     );

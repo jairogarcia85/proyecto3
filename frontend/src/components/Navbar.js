@@ -41,9 +41,6 @@ class Navbar extends Component {
             <li>
               <Link to="/">Home </Link>
             </li>
-            <li>
-              <Link to="/contact">Contact </Link>
-            </li>
             {!isLogged && (
               <li>
                 <Link to="/register">Register </Link>
