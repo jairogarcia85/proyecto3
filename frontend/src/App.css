@@ -201,6 +201,46 @@ h6 {
   margin: 100px auto;
 }
 
+.box-profile {
+  margin: 100px auto;
+  border: 1px solid #2e85d2;
+  border-radius: 5px;
+  padding: 15px 20px;
+  -webkit-box-shadow: 10px 10px 38px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 38px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 38px -4px rgba(0, 0, 0, 0.75);
+  width: 330px;
+}
+
+.box-profile p {
+  text-align: center;
+}
+
+.box-qr {
+  margin: 30px auto;
+  border: 1px solid #2e85d2;
+  border-radius: 5px;
+  padding: 15px 20px;
+  -webkit-box-shadow: 10px 10px 38px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 38px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 38px -4px rgba(0, 0, 0, 0.75);
+  width: 330px;
+}
+
+.box-qr-section {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.box-qr p {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.box-qr h3 {
+  text-align: center;
+}
+
 .roomsHero {
   background-image: url("./images/room-2.jpeg");
   min-height: 60vh;

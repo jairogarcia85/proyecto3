@@ -11,7 +11,7 @@ function QRcodeGenerator(url) {
     background: "rgb(255, 255, 255)",
     foreground: "rgb(10, 0, 12)",
     level: "L",
-    size: 300,
+    size: 275,
     value: url
   }).toDataURL();
 }

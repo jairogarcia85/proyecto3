@@ -11,17 +11,19 @@ import Personalqr from "./pages/Personalqr";
 import Contactowner from "./pages/Contactowner";
 import { PrivateRoute } from "./components/PrivateRoute";
 
-const Router = () => (
-  <Switch>
-    <Route exact path="/" component={Home} />
-    <Route exact path="/register" component={Register} />
-    <Route exact path="/register/:slug" component={SingleRoom} />
-    <Route exact path="/login" component={Signin} />
-    <PrivateRoute exact path="/user/:id" component={Profile} />
-    <PrivateRoute exact path="/personalqr" component={Personalqr} />
-    <Route exact path="/:id/contact-owner" component={Contactowner} />
-    <Route component={Error} />
-  </Switch>
-);
+const Router = () => {
+  return (
+    <Switch>
+      <Route exact path="/" component={Home} />
+      <Route exact path="/register" component={Register} />
+      <Route exact path="/register/:slug" component={SingleRoom} />
+      <Route exact path="/login" component={Signin} />
+      <PrivateRoute exact path="/user/:id" component={Profile} />
+      <PrivateRoute exact path="/personalqr" component={Personalqr} />
+      <Route exact path="/:id/contact-owner" component={Contactowner} />
+      <Route component={Error} />
+    </Switch>
+  );
+};
 
 export default Router;

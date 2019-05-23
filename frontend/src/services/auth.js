@@ -1,30 +1,31 @@
-import axios from 'axios'
-const baseURL = 'http://localhost:3000'
+import axios from "axios";
+//const baseURL = 'http://localhost:3000'
+const baseURL = "https://hmgb.herokuapp.com";
 
 class AuthService {
   constructor() {
     this.service = axios.create({
       baseURL,
       withCredentials: true
-    })
+    });
   }
   signup = form => {
     return this.service
-      .post('/signup', form)
+      .post("/signup", form)
       .then(({ data }) => data)
-      .catch(err => err)
-  }
+      .catch(err => err);
+  };
   login = form => {
     return this.service
-      .post('/login', form)
+      .post("/login", form)
       .then(response => {
-        console.log(response, 'wtf')
-        return response
+        console.log(response, "wtf");
+        return response;
       })
       .catch(err => {
-        return { err: 'Password incorrect' }
-      })
-  }
+        return { err: "Password incorrect" };
+      });
+  };
 }
 
-export default AuthService
+export default AuthService;

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 //import Qrcode from "./Qrcode";
 import { Link } from "react-router-dom";
+import logo from "../images/help-me-get-back.jpg";
 
 class User extends Component {
   state = {
@@ -22,10 +23,14 @@ class User extends Component {
     console.log(this.props);
     if (this.isLogged) {
       return (
-        <div>
+        <div className="box-profile">
           <div>
+            <p>
+              <br />
+              <img src={logo} alt="qr-code" />
+            </p>
             <p />
-            <h2>Profile</h2>
+            <h2>Personal Information</h2>
             <br />
             <h3>Name: {name}</h3>
             <br />
@@ -33,12 +38,14 @@ class User extends Component {
             <br />
             <h3>Phone: {telephone}</h3>
             <br />
-            <h3>Social: {social}</h3>
+            <h3>Facebook: {social}</h3>
             <br />
             <h3>Pais: {country}</h3>
             <br />
           </div>
-          <Link to="/Personalqr">Personal QR</Link>
+          <h2>
+            <Link to="/Personalqr">Ger your Personal QR</Link>
+          </h2>
         </div>
       );
     } else {

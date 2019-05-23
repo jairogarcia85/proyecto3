@@ -28,11 +28,6 @@ router.get("/private", isLogged, (req, res, next) => {
   res.status(200).json({ msg: "You are Logged in" });
 });
 
-router.get("/logout", (req, res, next) => {
-  req.logout();
-  res.redirect("/");
-});
-
 function isLogged(req, res, next) {
   if (!req.isAuthenticated())
     return res.status(401).json({ msg: "You're not logged" });
